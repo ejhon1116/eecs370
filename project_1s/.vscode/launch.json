@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "starter 1s",
+            "program": "${workspaceFolder}/simulator",
+            "cwd": "${workspaceFolder}",
+        	"preRunCommands": ["breakpoint set --name main"],
+            "args": ["spec.mc"],
+		// ^ adds a breakpoint at the beginning of main
+        }
+    ]
+}

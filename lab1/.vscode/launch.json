@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Lab 1a",
+            "program": "${workspaceFolder}/thing.exe",
+            "cwd": "${workspaceFolder}",
+        	"preRunCommands": ["breakpoint set --name main"]
+		// ^ adds a breakpoint at the beginning of main
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "starter 1a",
+            "program": "${workspaceFolder}/assembler",
+            "cwd": "${workspaceFolder}",
+        	"preRunCommands": ["breakpoint set --name main"],
+            "args": ["sw.as", "sw.mc"],
+		// ^ adds a breakpoint at the beginning of main
+        }
+    ]
+}
